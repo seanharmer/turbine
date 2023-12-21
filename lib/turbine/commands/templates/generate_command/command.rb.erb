@@ -1,0 +1,23 @@
+require 'thor/group'
+
+module Turbine
+  class <%= name.camelize %> < Thor::Group
+    include Thor::Actions
+
+    desc "Describe what #{name} does"
+    argument :name
+    argument :path
+
+    def self.source_root
+      File.dirname(__FILE__)
+    end
+
+    # TODO: Implement your function
+    def do_something
+      puts "do_something"
+    end
+
+    # OPTIONAL: Add extra functions as needed
+
+  end
+end

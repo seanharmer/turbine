@@ -1,0 +1,32 @@
+/*
+  This file is part of KDGraphics.
+
+  SPDX-FileCopyrightText: 2023 Klarälvdalens Datakonsult AB, a KDAB Group company <info@kdab.com>
+
+  SPDX-License-Identifier: MIT
+
+  Contact KDAB at <info@kdab.com> for commercial licensing options.
+*/
+
+#pragma once
+
+#include <KDGpuExample/simple_example_engine_layer.h>
+
+using namespace KDGraphics;
+using namespace KDGpuExample;
+
+class <%= name.capitalize %> : public SimpleExampleEngineLayer
+{
+public:
+    <%= name.capitalize %>();
+    <%= "~#{name.capitalize}" %>();
+
+protected:
+    void initializeScene() override;
+    void cleanupScene() override;
+    void updateScene() override;
+    void render() override;
+    void resize() override;
+
+private:
+};

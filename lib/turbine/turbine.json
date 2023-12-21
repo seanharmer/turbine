@@ -1,0 +1,11 @@
+{
+    "commands": [
+        {
+            "name": "generate_command",
+            "usage": "generate_command <name> <path>",
+            "description": "Creates a new simple turbine command at the given path",
+            "class": "Turbine::GenerateCommand",
+            "path": "commands/generate_command.rb"
+        }
+    ]
+}
